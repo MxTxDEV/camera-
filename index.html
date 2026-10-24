@@ -1,0 +1,382 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Câmera Lâmpada Wi-Fi 360° | Segurança Invisível para Sua Casa</title>
+<meta name="description" content="Câmera de segurança Wi-Fi em formato de lâmpada. Gira 360°, visão noturna, alerta no celular. Instala em 30 segundos, sem fio e sem obra. Garantia de 30 dias.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#0b0f17; --bg2:#111826; --card:#161f30; --line:#24304a;
+  --txt:#eaf0fb; --mut:#9aa8c4; --acc:#22d3a0; --acc2:#16a37c;
+  --hot:#ff4d5e; --gold:#ffc14d; --white:#fff;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Inter,system-ui,sans-serif;background:var(--bg);color:var(--txt);line-height:1.6;-webkit-font-smoothing:antialiased;padding-bottom:84px}
+h1,h2,h3{font-family:Sora,Inter,sans-serif;line-height:1.15;letter-spacing:-.02em}
+a{color:inherit}
+img{max-width:100%;display:block}
+.wrap{max-width:1120px;margin:0 auto;padding:0 20px}
+section{padding:72px 0}
+.alt{background:var(--bg2)}
+.tag{display:inline-block;font-size:.78rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--acc);margin-bottom:12px}
+h2{font-size:clamp(1.7rem,4.4vw,2.7rem);font-weight:800;margin-bottom:16px}
+.lead{color:var(--mut);font-size:1.08rem;max-width:680px}
+.center{text-align:center}.center .lead{margin:0 auto}
+.btn{display:inline-block;background:linear-gradient(135deg,var(--acc),var(--acc2));color:#04251c;font-weight:800;font-family:Sora,sans-serif;font-size:1.08rem;padding:18px 34px;border-radius:14px;text-decoration:none;box-shadow:0 10px 30px rgba(34,211,160,.35);transition:.2s;text-align:center}
+.btn:hover{transform:translateY(-2px);box-shadow:0 14px 36px rgba(34,211,160,.5)}
+.btn.pulse{animation:pulse 2s infinite}
+@keyframes pulse{0%{box-shadow:0 0 0 0 rgba(34,211,160,.55)}70%{box-shadow:0 0 0 18px rgba(34,211,160,0)}100%{box-shadow:0 0 0 0 rgba(34,211,160,0)}}
+.sub{font-size:.85rem;color:var(--mut);margin-top:12px}
+
+/* top bar */
+.top{background:var(--hot);color:#fff;text-align:center;font-size:.9rem;font-weight:600;padding:9px 12px}
+.top b{font-variant-numeric:tabular-nums;background:rgba(0,0,0,.25);padding:2px 8px;border-radius:6px;margin-left:4px}
+
+/* hero */
+.hero{padding:48px 0 72px;background:radial-gradient(900px 500px at 80% 0%,rgba(34,211,160,.14),transparent 60%)}
+.hero .grid{display:grid;grid-template-columns:1.05fr .95fr;gap:40px;align-items:center}
+.stars{color:var(--gold);font-size:.95rem;margin-bottom:14px}
+.stars span{color:var(--mut);margin-left:6px}
+.hero h1{font-size:clamp(2rem,5.6vw,3.6rem);font-weight:800;margin-bottom:18px}
+.hero h1 em{font-style:normal;color:var(--acc)}
+.hero p.lead{margin-bottom:22px}
+.bul{list-style:none;margin-bottom:26px}
+.bul li{padding-left:30px;position:relative;margin:8px 0;font-weight:500}
+.bul li::before{content:"✓";position:absolute;left:0;top:0;width:22px;height:22px;border-radius:50%;background:rgba(34,211,160,.18);color:var(--acc);font-size:.8rem;display:grid;place-items:center;font-weight:800;top:3px}
+.price-hero{display:flex;align-items:baseline;gap:12px;flex-wrap:wrap;margin-bottom:18px}
+.price-hero s{color:var(--mut);font-size:1.1rem}
+.price-hero strong{font-family:Sora;font-size:2.4rem;color:var(--white)}
+.price-hero .off{background:var(--hot);color:#fff;font-size:.8rem;font-weight:700;padding:4px 10px;border-radius:99px}
+.pic{background:linear-gradient(160deg,#fff,#e6edf8);border-radius:28px;padding:28px;position:relative;box-shadow:0 30px 80px rgba(0,0,0,.5)}
+.pic img{margin:0 auto;max-height:520px;width:auto}
+.pic .chip{position:absolute;background:#0b0f17;color:#fff;font-size:.78rem;font-weight:600;padding:8px 12px;border-radius:99px;box-shadow:0 8px 20px rgba(0,0,0,.35)}
+.chip.c1{top:18px;left:-10px}.chip.c2{bottom:90px;right:-10px}.chip.c3{bottom:20px;left:10px}
+.trust{display:flex;gap:18px;flex-wrap:wrap;margin-top:22px;color:var(--mut);font-size:.85rem}
+
+/* proof strip */
+.strip{background:var(--card);border-block:1px solid var(--line);padding:22px 0}
+.strip .wrap{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;text-align:center}
+.strip b{display:block;font-family:Sora;font-size:1.5rem;color:var(--acc)}
+.strip span{font-size:.82rem;color:var(--mut)}
+
+/* pain */
+.pain{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:36px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:26px}
+.card h3{font-size:1.15rem;margin-bottom:8px}
+.card p{color:var(--mut);font-size:.96rem}
+.ico{font-size:1.8rem;margin-bottom:10px}
+.pain .card{border-color:rgba(255,77,94,.3)}
+.turn{margin-top:36px;padding:26px;border-radius:18px;background:linear-gradient(135deg,rgba(34,211,160,.14),rgba(34,211,160,.04));border:1px solid rgba(34,211,160,.35);font-size:1.12rem;font-weight:500}
+
+/* features */
+.feat{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:40px}
+
+/* steps */
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:40px;counter-reset:s}
+.steps .card{position:relative;padding-top:50px}
+.steps .card::before{counter-increment:s;content:counter(s);position:absolute;top:-18px;left:24px;width:44px;height:44px;border-radius:12px;background:var(--acc);color:#04251c;font-family:Sora;font-weight:800;display:grid;place-items:center;font-size:1.2rem}
+
+/* compare */
+table{width:100%;border-collapse:collapse;margin-top:36px;background:var(--card);border-radius:18px;overflow:hidden;font-size:.95rem}
+th,td{padding:15px 16px;text-align:left;border-bottom:1px solid var(--line)}
+th{background:#0e1626;font-family:Sora;font-size:.9rem}
+td:nth-child(3),th:nth-child(3){background:rgba(34,211,160,.08);color:var(--acc);font-weight:600}
+td:nth-child(2){color:var(--mut)}
+.tw{overflow-x:auto}
+
+/* offer */
+.offer{background:radial-gradient(800px 400px at 50% 0%,rgba(255,193,77,.12),transparent 60%),var(--bg)}
+.stack{max-width:720px;margin:36px auto 0;background:var(--card);border:2px solid var(--gold);border-radius:24px;padding:30px;box-shadow:0 30px 80px rgba(0,0,0,.45)}
+.row{display:flex;justify-content:space-between;gap:14px;padding:13px 0;border-bottom:1px dashed var(--line)}
+.row span:first-child{font-weight:500}
+.row small{display:block;color:var(--mut);font-size:.82rem;font-weight:400}
+.row s{color:var(--mut);white-space:nowrap}
+.row.bonus span:first-child::before{content:"🎁 ";}
+.tot{display:flex;justify-content:space-between;align-items:center;padding:18px 0 4px;font-family:Sora;font-weight:700}
+.tot s{color:var(--hot);font-size:1.3rem}
+.final{text-align:center;margin-top:18px;padding:22px;border-radius:18px;background:#0b0f17}
+.final .de{color:var(--mut)}
+.final .big{font-family:Sora;font-weight:800;font-size:clamp(2.6rem,9vw,4rem);color:var(--acc);line-height:1.1}
+.final .par{color:var(--mut);margin-bottom:18px}
+.daily{margin:14px 0 20px;font-size:.95rem;color:var(--gold);font-weight:600}
+.stock{margin:18px auto 0;max-width:420px;text-align:left}
+.stock .bar{height:10px;background:#0b0f17;border-radius:99px;overflow:hidden;margin-top:6px}
+.stock .bar i{display:block;height:100%;width:87%;background:linear-gradient(90deg,var(--gold),var(--hot));border-radius:99px}
+.stock p{font-size:.85rem;color:var(--mut)}
+.stock b{color:var(--hot)}
+
+/* guarantee */
+.guar{display:grid;grid-template-columns:140px 1fr;gap:28px;align-items:center;max-width:820px;margin:0 auto;background:var(--card);border:1px solid var(--line);border-radius:22px;padding:30px}
+.seal{width:130px;height:130px;border-radius:50%;background:radial-gradient(circle,var(--gold),#d99a1f);color:#2a1c00;display:grid;place-items:center;text-align:center;font-family:Sora;font-weight:800;line-height:1.1;box-shadow:0 0 0 6px rgba(255,193,77,.25)}
+.seal b{font-size:2.4rem;display:block}
+
+/* testimonials */
+.tes{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:36px}
+.tes .card p{color:var(--txt);font-size:.98rem;margin:10px 0 16px}
+.who{display:flex;align-items:center;gap:12px;font-size:.88rem}
+.who i{width:38px;height:38px;border-radius:50%;background:linear-gradient(135deg,var(--acc),#2c7be5);display:grid;place-items:center;font-style:normal;font-weight:800;color:#04251c}
+.who span{color:var(--mut);display:block;font-size:.78rem}
+
+/* specs */
+.spec{display:grid;grid-template-columns:1fr 1fr;gap:0 40px;max-width:760px;margin:30px auto 0}
+.spec div{display:flex;justify-content:space-between;padding:12px 0;border-bottom:1px solid var(--line);font-size:.93rem}
+.spec span{color:var(--mut)}
+
+/* faq */
+details{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:18px 22px;margin-top:12px}
+summary{cursor:pointer;font-weight:600;list-style:none;display:flex;justify-content:space-between;gap:12px}
+summary::after{content:"+";color:var(--acc);font-size:1.4rem;line-height:1}
+details[open] summary::after{content:"–"}
+details p{color:var(--mut);margin-top:12px}
+.faq{max-width:780px;margin:30px auto 0}
+
+footer{padding:36px 0;text-align:center;color:var(--mut);font-size:.82rem;border-top:1px solid var(--line)}
+
+/* sticky */
+.sticky{position:fixed;left:0;right:0;bottom:0;z-index:50;background:rgba(11,15,23,.96);backdrop-filter:blur(10px);border-top:1px solid var(--line);padding:10px 16px}
+.sticky .in{max-width:1120px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;gap:14px}
+.sticky .p small{color:var(--mut);display:block;font-size:.72rem}
+.sticky .p b{font-family:Sora;font-size:1.3rem}
+.sticky .btn{padding:13px 24px;font-size:.98rem}
+
+@media(max-width:860px){
+  section{padding:54px 0}
+  .hero .grid,.pain,.feat,.steps,.tes{grid-template-columns:1fr}
+  .hero .pic{order:-1}
+  .pic img{max-height:340px}
+  .chip.c1{left:6px}.chip.c2{right:6px}
+  .strip .wrap{grid-template-columns:repeat(2,1fr)}
+  .guar{grid-template-columns:1fr;text-align:center}.seal{margin:0 auto}
+  .spec{grid-template-columns:1fr}
+  .hero .btn{display:block}
+}
+</style>
+</head>
+<body>
+
+<div class="top">🔥 Oferta de lançamento termina em <b id="cd">15:00</b> — frete grátis para todo o Brasil</div>
+
+<header class="hero">
+  <div class="wrap grid">
+    <div>
+      <div class="stars">★★★★★ <span>Avaliada por milhares de famílias brasileiras</span></div>
+      <h1>Transforme qualquer soquete em uma <em>central de segurança</em> 24 horas</h1>
+      <p class="lead">Parece uma lâmpada comum. Vigia como uma câmera profissional. Veja sua casa, loja ou quem você ama pelo celular — de qualquer lugar do mundo, em segundos.</p>
+      <ul class="bul">
+        <li>Gira 360° — um único ponto cobre o cômodo inteiro</li>
+        <li>Visão noturna colorida e infravermelha</li>
+        <li>Alerta no celular quando detectar movimento</li>
+        <li>Instala em 30 segundos: é só rosquear. Sem fio, sem furo, sem técnico</li>
+      </ul>
+      <div class="price-hero">
+        <s>R$ 249,90</s><strong>R$ 97,90</strong><span class="off">-61%</span>
+      </div>
+      <a href="#oferta" class="btn pulse">QUERO PROTEGER MINHA CASA AGORA →</a>
+      <p class="sub">🔒 Compra segura · 📦 Envio imediato · ✅ 30 dias de garantia</p>
+      <div class="trust"><span>✔ Pague na entrega ou parcele no cartão</span><span>✔ Suporte em português</span></div>
+    </div>
+    <div class="pic">
+      <img src="assets/camera.png" alt="Câmera de segurança Wi-Fi em formato de lâmpada, com LEDs e lente giratória">
+      <span class="chip c1">📱 Ao vivo no celular</span>
+      <span class="chip c2">🌙 Visão noturna</span>
+      <span class="chip c3">🎙️ Áudio 2 vias</span>
+    </div>
+  </div>
+</header>
+
+<div class="strip">
+  <div class="wrap">
+    <div><b>360°</b><span>de cobertura panorâmica</span></div>
+    <div><b>30 seg</b><span>para instalar</span></div>
+    <div><b>24h</b><span>de vigilância contínua</span></div>
+    <div><b>30 dias</b><span>de garantia total</span></div>
+  </div>
+</div>
+
+<section>
+  <div class="wrap">
+    <span class="tag">A verdade que ninguém conta</span>
+    <h2>Seu maior risco não é o que você vê. É o que você <u>não</u> vê.</h2>
+    <p class="lead">Todo dia, milhares de brasileiros descobrem tarde demais o que acontecia quando estavam fora. A pergunta não é “se”, é “quando”.</p>
+    <div class="pain">
+      <div class="card"><div class="ico">😰</div><h3>Aquela angústia de sair de casa</h3><p>Você está no trabalho e não para de pensar: “será que tá tudo bem lá?”. Sem imagem, só resta a dúvida.</p></div>
+      <div class="card"><div class="ico">💸</div><h3>Sistemas de segurança custam uma fortuna</h3><p>Câmeras profissionais pedem instalação, cabeamento, mensalidade e técnico. Facilmente passam de R$ 1.000.</p></div>
+      <div class="card"><div class="ico">👀</div><h3>Câmera à mostra é alvo</h3><p>Uma câmera tradicional avisa onde está — e quem quer agir sabe onde mexer. Você perde o fator surpresa.</p></div>
+    </div>
+    <div class="turn">💡 E se a melhor câmera de segurança fosse aquela que <b>ninguém desconfia que é uma câmera</b>? É exatamente isso que você vai ter.</div>
+  </div>
+</section>
+
+<section class="alt">
+  <div class="wrap center">
+    <span class="tag">A solução</span>
+    <h2>Segurança profissional escondida à vista de todos</h2>
+    <p class="lead">Uma câmera Wi-Fi inteligente no formato de lâmpada. Rosqueou no soquete E27, conectou no app e pronto: sua casa inteira sob controle.</p>
+    <div class="feat" style="text-align:left">
+      <div class="card"><div class="ico">🔄</div><h3>Giro panorâmico 360°</h3><p>Controle a direção da lente pelo celular. Uma câmera faz o trabalho de três.</p></div>
+      <div class="card"><div class="ico">🌙</div><h3>Visão noturna</h3><p>LEDs infravermelhos e luz branca: imagem nítida mesmo no escuro total.</p></div>
+      <div class="card"><div class="ico">🔔</div><h3>Alerta de movimento</h3><p>Notificação instantânea no seu celular assim que algo se mexer na área.</p></div>
+      <div class="card"><div class="ico">🎙️</div><h3>Áudio nos dois sentidos</h3><p>Ouça e fale pelo celular: converse com os filhos, o pet ou assuste um intruso.</p></div>
+      <div class="card"><div class="ico">🕵️</div><h3>100% discreta</h3><p>Ninguém desconfia. Fica no teto, no corredor, na garagem — como uma lâmpada qualquer.</p></div>
+      <div class="card"><div class="ico">🔌</div><h3>Sem fio, sem obra</h3><p>Usa a energia do próprio soquete. Mudou de casa? Leva junto em segundos.</p></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap center">
+    <span class="tag">Simples assim</span>
+    <h2>Pronta para vigiar em 3 passos</h2>
+    <div class="steps" style="text-align:left">
+      <div class="card"><h3>Rosqueie</h3><p>Coloque no soquete E27 de qualquer luminária, no lugar da lâmpada.</p></div>
+      <div class="card"><h3>Conecte</h3><p>Baixe o app gratuito, escaneie o QR Code e conecte ao seu Wi-Fi.</p></div>
+      <div class="card"><h3>Monitore</h3><p>Veja ao vivo, gire a lente, receba alertas. Tudo na palma da mão.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="alt">
+  <div class="wrap center">
+    <span class="tag">Compare e decida</span>
+    <h2>Por que pagar mais por menos?</h2>
+    <div class="tw">
+    <table>
+      <tr><th></th><th>Câmera tradicional</th><th>Câmera Lâmpada 360°</th></tr>
+      <tr><td>Instalação</td><td>Furadeira, cabos, técnico</td><td>Rosquear. 30 segundos</td></tr>
+      <tr><td>Custo total</td><td>R$ 500 a R$ 1.500+</td><td>Menos de R$ 100</td></tr>
+      <tr><td>Cobertura</td><td>Ângulo fixo</td><td>Giro 360°</td></tr>
+      <tr><td>Discrição</td><td>Visível a distância</td><td>Parece uma lâmpada</td></tr>
+      <tr><td>Mudou de casa?</td><td>Refazer tudo</td><td>Leva na mão</td></tr>
+      <tr><td>Visão no celular</td><td>Depende do modelo</td><td>Incluso, ao vivo</td></tr>
+    </table>
+    </div>
+  </div>
+</section>
+
+<section class="offer" id="oferta">
+  <div class="wrap center">
+    <span class="tag" style="color:var(--gold)">Oferta exclusiva de lançamento</span>
+    <h2>Veja tudo o que você leva hoje</h2>
+    <p class="lead">Somando o valor real de cada item, você economiza mais de 60%. Mas só enquanto o estoque do lote promocional durar.</p>
+
+    <div class="stack" style="text-align:left">
+      <div class="row"><span>Câmera Lâmpada Wi-Fi 360° Full Giro<small>Com visão noturna, áudio 2 vias e alerta de movimento</small></span><s>R$ 249,90</s></div>
+      <div class="row bonus"><span>BÔNUS 1 — Guia “Posições Estratégicas”<small>Onde instalar em cada cômodo para zero ponto cego</small></span><s>R$ 37,00</s></div>
+      <div class="row bonus"><span>BÔNUS 2 — Suporte técnico via WhatsApp<small>Ajuda para configurar passo a passo, em português</small></span><s>R$ 49,00</s></div>
+      <div class="row bonus"><span>BÔNUS 3 — Frete grátis para todo o Brasil<small>Envio rápido com código de rastreio</small></span><s>R$ 24,90</s></div>
+      <div class="row bonus"><span>BÔNUS 4 — Garantia estendida de 30 dias<small>Troca ou reembolso, sem burocracia</small></span><s>R$ 29,90</s></div>
+      <div class="tot"><span>Valor total</span><s>R$ 390,70</s></div>
+
+      <div class="final">
+        <div class="de">Hoje você paga apenas</div>
+        <div class="big">R$ 97,90</div>
+        <div class="par">ou 12x de R$ 9,76 no cartão</div>
+        <a href="https://wa.me/5500000000000?text=Quero%20a%20C%C3%A2mera%20L%C3%A2mpada%20360%C2%B0" class="btn pulse" style="display:block">SIM! QUERO MINHA CÂMERA COM DESCONTO →</a>
+        <p class="sub">🔒 Pagamento 100% seguro</p>
+      </div>
+      <p class="daily center" style="text-align:center">São só R$ 0,27 por dia no primeiro ano — menos que um pãozinho para proteger quem você mais ama.</p>
+      <div class="stock">
+        <p>⚠️ Lote promocional: restam apenas <b id="left">23</b> unidades</p>
+        <div class="bar"><i></i></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="guar">
+      <div class="seal"><div><b>30</b>DIAS</div></div>
+      <div>
+        <h2 style="font-size:1.7rem">Risco zero: garantia incondicional</h2>
+        <p class="lead" style="color:var(--mut)">Teste em casa por 30 dias. Se não gostar por qualquer motivo, devolvemos 100% do seu dinheiro. Sem perguntas, sem letra miúda. Quem arrisca aqui é a gente — não você.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="alt">
+  <div class="wrap center">
+    <span class="tag">Quem já usa aprova</span>
+    <h2>O que nossos clientes dizem</h2>
+    <!-- SUBSTITUA pelos depoimentos reais dos seus clientes antes de publicar -->
+    <div class="tes" style="text-align:left">
+      <div class="card"><div class="stars">★★★★★</div><p>“Coloquei na garagem e na sala. Instalei em menos de um minuto e já estou vendo tudo no celular. Super recomendo!”</p><div class="who"><i>M</i><div>Mariana S.<span>Compra verificada</span></div></div></div>
+      <div class="card"><div class="stars">★★★★★</div><p>“Uso na minha loja para ficar de olho quando saio. Ninguém percebe que é câmera. Muito melhor que as câmeras caras.”</p><div class="who"><i>R</i><div>Ricardo A.<span>Compra verificada</span></div></div></div>
+      <div class="card"><div class="stars">★★★★★</div><p>“Deixei no quarto do bebê com a babá. Conversar pelo áudio e ver tudo ao vivo me dá uma tranquilidade enorme.”</p><div class="who"><i>C</i><div>Carla M.<span>Compra verificada</span></div></div></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap center">
+    <span class="tag">Detalhes do produto</span>
+    <h2>Ficha técnica</h2>
+    <div class="spec" style="text-align:left">
+      <div><span>Cor</span><b>Branco</b></div>
+      <div><span>Tamanho</span><b>Único</b></div>
+      <div><span>Dimensões</span><b>16 × 8 × 8 cm</b></div>
+      <div><span>Peso</span><b>0,24 kg</b></div>
+      <div><span>Encaixe</span><b>Soquete E27</b></div>
+      <div><span>Conexão</span><b>Wi-Fi</b></div>
+    </div>
+  </div>
+</section>
+
+<section class="alt">
+  <div class="wrap center">
+    <span class="tag">Dúvidas</span>
+    <h2>Perguntas frequentes</h2>
+    <div class="faq" style="text-align:left">
+      <details><summary>Preciso de instalação profissional?</summary><p>Não. Basta rosquear no soquete E27 como uma lâmpada comum, ligar a energia e parear pelo aplicativo.</p></details>
+      <details><summary>Funciona com qualquer Wi-Fi?</summary><p>Funciona com redes Wi-Fi 2.4 GHz, o padrão da maioria dos roteadores residenciais.</p></details>
+      <details><summary>Preciso deixar o interruptor ligado?</summary><p>Sim. Como a câmera usa a energia do soquete, o interruptor deve ficar ligado para ela funcionar 24 horas.</p></details>
+      <details><summary>Consigo ver as imagens de fora de casa?</summary><p>Sim! Pelo aplicativo no celular, de qualquer lugar com internet.</p></details>
+      <details><summary>Em quanto tempo chega?</summary><p>O envio é feito logo após a confirmação, com código de rastreio. O prazo varia conforme sua região.</p></details>
+      <details><summary>E se eu não gostar?</summary><p>Você tem 30 dias de garantia. Devolvemos seu dinheiro, sem burocracia.</p></details>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap center">
+    <h2>Cada dia sem proteção é um dia de risco.</h2>
+    <p class="lead" style="margin-bottom:26px">Por menos de R$ 100 e 30 segundos de instalação, você dorme e sai de casa com a mente tranquila. Garanta o seu antes que o lote acabe.</p>
+    <a href="#oferta" class="btn pulse">GARANTIR MINHA CÂMERA COM 61% OFF →</a>
+    <p class="sub">✅ 30 dias de garantia · 📦 Frete grátis · 🔒 Compra segura</p>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">© 2026 — Todos os direitos reservados. As imagens são meramente ilustrativas. Uso responsável: monitore apenas ambientes em que você tem autorização.</div>
+</footer>
+
+<div class="sticky">
+  <div class="in">
+    <div class="p"><small>De R$ 249,90 por</small><b>R$ 97,90</b></div>
+    <a href="#oferta" class="btn">COMPRAR AGORA</a>
+  </div>
+</div>
+
+<script>
+// Contagem regressiva (15 min, reinicia ao esgotar)
+(function(){
+  var KEY='cam_deadline', now=Date.now(), end;
+  try{ end=+localStorage.getItem(KEY); }catch(e){}
+  if(!end||end<now){ end=now+15*60*1000; try{localStorage.setItem(KEY,end);}catch(e){} }
+  var el=document.getElementById('cd');
+  function tick(){
+    var s=Math.max(0,Math.floor((end-Date.now())/1000));
+    if(s===0){ end=Date.now()+15*60*1000; try{localStorage.setItem(KEY,end);}catch(e){} s=900; }
+    el.textContent=String(Math.floor(s/60)).padStart(2,'0')+':'+String(s%60).padStart(2,'0');
+  }
+  tick(); setInterval(tick,1000);
+})();
+</script>
+</body>
+</html>
